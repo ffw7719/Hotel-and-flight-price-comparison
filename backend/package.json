@@ -1,0 +1,52 @@
+{
+  "name": "hotel-flight-price-comparison-backend",
+  "version": "1.0.0",
+  "description": "Backend service for hotel and flight price comparison AI agent",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "keywords": [
+    "price-comparison",
+    "hotel",
+    "flight",
+    "ai-agent",
+    "scraper"
+  ],
+  "author": "ffw7719",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "redis": "^4.6.7",
+    "puppeteer": "^21.1.1",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "joi": "^17.9.2",
+    "winston": "^3.10.0",
+    "socket.io": "^4.7.2",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.4",
+    "supertest": "^6.3.3",
+    "eslint": "^8.48.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
