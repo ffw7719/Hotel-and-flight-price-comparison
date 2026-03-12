@@ -1,0 +1,31 @@
+# Cloudflare Workers/Pages 配置文件
+
+## _routes.json
+```json
+{
+  "routes": [
+    { "pattern": "/api/*", "zone_id": null },
+    { "pattern": "/*" }
+  ]
+}
+```
+
+## wrangler.toml (Workers)
+```toml
+name = "hotel-flight-price-comparison"
+compatibility_date = "2024-01-01"
+
+[env.production]
+name = "hotel-flight-price-comparison-prod"
+
+[[kv_namespaces]]
+binding = "PRICE_CACHE"
+id = "your-kv-namespace-id"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "price-comparison"
+database_id = "your-d1-database-id"
+```
+
+---
