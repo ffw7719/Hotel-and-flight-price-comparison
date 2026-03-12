@@ -1,30 +1,26 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "backend/package.json",
-      "use": "@vercel/node",
-      "config": {
-        "outputDirectory": "backend/dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/dist/app.js"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/$1"
-    }
-  ],
+  "name": "Hotel Flight Price Comparison",
+  "description": "AI-powered hotel and flight price comparison platform",
+  "repository": "https://github.com/ffw7719/Hotel-and-flight-price-comparison",
+  "logo": "https://raw.githubusercontent.com/ffw7719/Hotel-and-flight-price-comparison/main/frontend/public/logo.png",
   "env": {
-    "NODE_ENV": "production",
-    "PORT": "3000"
+    "NEXT_PUBLIC_API_URL": {
+      "description": "API URL for the backend service"
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "REDIS_URL": {
+      "description": "Redis connection string",
+      "required": true
+    },
+    "JWT_SECRET": {
+      "description": "Secret key for JWT tokens",
+      "required": true
+    }
   },
-  "regions": ["iad1"]
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "framework": "nextjs"
 }

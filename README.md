@@ -13,6 +13,14 @@
 
 ---
 
+## 🚀 一键部署（推荐）
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ffw7719/Hotel-and-flight-price-comparison)
+
+[![Deploy to Cloudflare Pages](https://deploy.workers.cloudflare.com/button)](https://dash.cloudflare.com/?to=/:account/pages/new?repo=https://github.com/ffw7719/Hotel-and-flight-price-comparison)
+
+---
+
 ## 🚀 部署教程（小白专属）
 
 ### 方法一：Vercel 一键部署（推荐）
