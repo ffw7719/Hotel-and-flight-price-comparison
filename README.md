@@ -27,8 +27,6 @@
 
 #### 准备工作
 1. 注册 [Vercel](https://vercel.com) 账号（用 GitHub 登录）
-2. 注册 [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) 账号（免费版够用）
-3. 注册 [Redis Cloud](https://redis.com/cloud/) 账号（免费版够用）
 
 #### 部署步骤（图文详解）
 

@@ -1,25 +1,4 @@
 {
-  "name": "Hotel Flight Price Comparison",
-  "description": "AI-powered hotel and flight price comparison platform",
-  "repository": "https://github.com/ffw7719/Hotel-and-flight-price-comparison",
-  "logo": "https://raw.githubusercontent.com/ffw7719/Hotel-and-flight-price-comparison/main/frontend/public/logo.png",
-  "env": {
-    "NEXT_PUBLIC_API_URL": {
-      "description": "API URL for the backend service"
-    },
-    "MONGODB_URI": {
-      "description": "MongoDB connection string",
-      "required": true
-    },
-    "REDIS_URL": {
-      "description": "Redis connection string",
-      "required": true
-    },
-    "JWT_SECRET": {
-      "description": "Secret key for JWT tokens",
-      "required": true
-    }
-  },
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "framework": "nextjs"
